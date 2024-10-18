@@ -1,8 +1,9 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #cbddff;
+  background-color: #892d2d;
   margin: 0;
   padding: 50px;
+  align-items: center;
 }
 /*top of the page*/
 .logo {
@@ -16,9 +17,12 @@ body {
       height: auto; 
     }
 #title{
-  color: #333;
+  color: white;
   text-align: center;
   margin-top: 0;
+}
+#underTitle{
+  color: white;
 }
 p {
   margin-bottom: 20px;
@@ -27,16 +31,13 @@ p {
 .horizontal-line1 {
   width: 90%; 
   border-top: 2px solid black; 
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 0;
+  margin: 20px auto 10px auto; 
 }
+
 .horizontal-line2 {
   width: 85%; 
   border-top: 2px solid black; 
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 0; 
+  margin: 10px auto 20px auto; 
 }
 
 .main-cont {
@@ -66,7 +67,7 @@ p {
   border-bottom-right-radius: 20px;
   color: white;
   font-size: 20px;
-  background: linear-gradient(to top right, #63656d, #9ea2af);
+  background: linear-gradient(to top right, #292929, #747474);
   box-shadow: 4px 12px 20px -3px rgba(0, 0, 0, 0.356);
   text-align: left;
 }
@@ -98,7 +99,7 @@ p {
   border-bottom-right-radius: 20px;
   color: white;
   font-size: 20px;
-  background: linear-gradient(to top right, #63656d, #9ea2af);
+  background: linear-gradient(to top right, #292929, #747474);
   box-shadow: 4px 12px 20px -3px rgba(0, 0, 0, 0.356);
   text-align: center;
 }
@@ -123,7 +124,7 @@ th{
 }
 td:first-child{
   font-weight: bolder;
-  color:#2b2b2b
+  color:#b3b3b3
 }
 /*chart design*/
 #line-chart {
@@ -186,7 +187,7 @@ details summary:hover {
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: #1d2a42;
+    background-color: #050505;
     color: #fff;
     border-style: none;
     padding: 1em 2em;
@@ -212,7 +213,7 @@ details summary:hover {
     height: 100%;
     width: 0;
     border-radius: 0.5em;
-    background-color: #587bc5;
+    background-color: #8f9194;
     z-index: -1;
     transition: all 350ms;
   }
@@ -330,7 +331,7 @@ details summary:hover {
 
 #runButton:disabled {
     background-color: #c6c8cd; 
-    color: #8f9194; 
+    color: #000000; 
     cursor: not-allowed;
     border-color: #c6c8cd;
 }

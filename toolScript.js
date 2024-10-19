@@ -211,7 +211,11 @@ function processExcelFileP(file) {
         } else {
             console.error("The Excel file must contain 4 sheets.");
         }
+        // Activation of the run (if all 3 files are uploaded) button
         run++;
+        if(run ==3){
+          document.getElementById('runButton').disabled = false;
+        }
     };
 
     reader.readAsArrayBuffer(file); 
@@ -256,13 +260,14 @@ function processExcelFileO(file) {
             jsonData2[lastRowIndex]['6'],
         ];
         lastProvisions = jsonData2[0]['Zurückgestellt']; 
-        // Output the data for verification
         console.log("Formatted DataO:", DataO);
-        // Enable the test button
         run++;
+        if(run ==3){
+          document.getElementById('runButton').disabled = false;
+        }
     };
     
-    reader.readAsArrayBuffer(file);  // Read the file as an ArrayBuffer
+    reader.readAsArrayBuffer(file);
 }
 //process of third Excel file
 function processExcelFileS(file){
@@ -283,7 +288,8 @@ function processExcelFileS(file){
             row['Jahr']
         ]);
         console.log(actualY);
-        if(run ==2){
+      run++;
+        if(run ==3){
           document.getElementById('runButton').disabled = false;
         }
     };

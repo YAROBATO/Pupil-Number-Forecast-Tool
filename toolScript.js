@@ -211,13 +211,13 @@ function processExcelFileP(file) {
         } else {
             console.error("The Excel file must contain 4 sheets.");
         }
-        // Activation of the run (if all 3 files are uploaded) button
-        run++;
-        if(run ==3){
-          document.getElementById('runButton').disabled = false;
-        }
+        
     };
-
+    // Activation of the run (if all 3 files are uploaded) button
+    run++;
+    if(run ==3){
+      document.getElementById('runButton').disabled = false;
+    }
     reader.readAsArrayBuffer(file); 
 }
 function processSheet(sheet) {
@@ -261,12 +261,12 @@ function processExcelFileO(file) {
         ];
         lastProvisions = jsonData2[0]['Zurückgestellt']; 
         console.log("Formatted DataO:", DataO);
-        run++;
-        if(run ==3){
-          document.getElementById('runButton').disabled = false;
-        }
+        
     };
-    
+    run++;
+      if(run ==3){
+        document.getElementById('runButton').disabled = false;
+    }
     reader.readAsArrayBuffer(file);
 }
 //process of third Excel file
@@ -288,12 +288,12 @@ function processExcelFileS(file){
             row['Jahr']
         ]);
         console.log(actualY);
-      run++;
-        if(run ==3){
-          document.getElementById('runButton').disabled = false;
-        }
+      
     };
-    
+    run++;
+      if(run ==3){
+        document.getElementById('runButton').disabled = false;
+    }
     reader.readAsArrayBuffer(file);  // Read the file as an ArrayBuffer
 }
 //function for adding values to the table
